@@ -1,0 +1,425 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+}
+
+.mainContainer {
+  max-width: 1920px;
+  margin: auto;
+}
+
+/* ===========Header Start=============== */
+
+header {
+  height: 100px;
+  width: 100%;
+  margin: auto;
+  background: #31333b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.navSection ul {
+  display: flex;
+  gap: 30px;
+  padding: 35px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.navSection ul li a {
+  background-color: #09747400;
+  padding: 8px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.navSection ul li a:hover {
+  background-color: #55e0e5;
+  color: #303138;
+}
+/* ------search bar------- */
+.headRightSection {
+  height: 35px;
+  width: 300px;
+  background-color: #707070;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+input {
+  height: 100%;
+  width: 250px;
+  background-color: #5f5f61;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+::placeholder {
+  font-size: 1.2rem;
+  color: #ececec;
+  font-weight: 600;
+}
+.searchIcon {
+  height: 100%;
+  width: 50px;
+  background-color: #55e0e5;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.searchIcon i {
+  color: #303138;
+}
+.menuber {
+  color: #e9e9e9;
+  font-size: 1.7rem;
+  cursor: pointer;
+  display: none;
+}
+.menuber:hover i {
+  color: #55e0e5;
+}
+
+@media screen and (max-width: 1300px) {
+  .headRightSection,
+  .navSection {
+    display: none;
+  }
+  .menuber {
+    display: block;
+  }
+  header {
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+}
+
+/* ----------Hero CSS-------- */
+
+.heroo {
+  background-color: #2b2c32;
+  color: #e9e9e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px 20px 0 20px;
+}
+.herooLeft {
+  max-width: 700px;
+  padding: 0 0 20px 0;
+  text-align: center;
+}
+.herooImg {
+  background-image: url(hero\ img.png);
+  height: 450px;
+  width: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.herooLeft h4 {
+  font-size: 2rem;
+}
+.herooLeft h1 {
+  font-size: 4rem;
+  color: #5ccbea;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+}
+
+.herooLeft button {
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: #55e0e5;
+  border: 1px solid transparent;
+  font-size: 1.7rem;
+  color: #090910;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.herooLeft button:hover {
+  background-color: #2b2c32;
+  color: #e9e9e9;
+  border: 1px solid #e9e9e9;
+}
+
+.heroSocial i {
+  margin: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.heroSocial i:nth-child(1) {
+  color: #1877f2;
+}
+.heroSocial i:nth-child(2) {
+  color: #f56040;
+}
+.heroSocial i:nth-child(3) {
+  color: #1da1f2;
+}
+.heroSocial i:nth-child(4) {
+  color: #0077b5;
+}
+.heroSocial i:nth-child(5) {
+  color: #25d366;
+}
+.heroSocial i:hover {
+  transform: translateY(-5px);
+  transition: 0.5s;
+}
+@media screen and (max-width: 600px) {
+  .herooLeft h1 {
+    font-size: 2.5rem;
+  }
+  .herooLeft h4 {
+    font-size: 1.5rem;
+  }
+  .herooLeft button {
+    font-size: 1.2rem;
+  }
+  .heroSocial i {
+    font-size: 1.5rem;
+  }
+  .herooImg {
+    height: 300px;
+    width: 200px;
+  }
+}
+
+/* ----------------------------------------- */
+/* ----------------------------------------- */
+.skillSection {
+  background-color: #31333b;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+  text-decoration: overline;
+  color: #dbf8ff;
+}
+.headerText p {
+  font-size: 1.5rem;
+  text-align: center;
+  border: 2px solid #55e0e5;
+  margin: 40px 250px;
+  padding: 40px;
+  border-radius: 10px;
+  background: linear-gradient(100deg, #0076b513, #25d36518);
+}
+@media screen and (max-width: 1200px) {
+  .headerText p {
+    font-size: 1.2rem;
+    margin: 20px 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .headerText p {
+    font-size: 1rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+.skillIcons i {
+  font-size: 5rem;
+  width: 150px;
+  height: 150px;
+  border: 1px solid;
+  border-radius: 10px;
+  margin: 20px;
+  text-align: center;
+  line-height: 150px;
+  cursor: pointer;
+}
+.skillIcons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px 100px;
+}
+@media screen and (max-width: 1500px) {
+  .skillIcons {
+    padding: 10px;
+  }
+}
+
+.skillIcons i:nth-child(1) {
+  border: 1px solid #dd4a26;
+  color: #dd4a26;
+}
+
+.skillIcons i:nth-child(2) {
+  border: 1px solid #2561aa;
+  color: #2561aa;
+}
+.skillIcons i:nth-child(3) {
+  border: 1px solid #7b10f2;
+  color: #7b10f2;
+}
+.skillIcons i:nth-child(4) {
+  border: 1px solid #efd81d;
+  color: #efd81d;
+}
+.skillIcons i:nth-child(5) {
+  border: 1px solid #7476ad;
+  color: #7476ad;
+}
+.skillIcons i:nth-child(6) {
+  border: 1px solid #e8503e;
+  color: #e8503e;
+}
+.skillIcons i:nth-child(6) {
+  border: 1px solid #fb503b;
+  color: #fb503b;
+}
+.skillIcons i:nth-child(7) {
+  border: 1px solid #61dbfb;
+  color: #61dbfb;
+}
+.skillIcons i:nth-child(8) {
+  border: 1px solid #669a60;
+  color: #669a60;
+}
+.skillIcons i:nth-child(9) {
+  border: 1px solid #00718b;
+  color: #00718b;
+}
+.skillIcons i:nth-child(10) {
+  border: 1px solid #00718b;
+  color: #00718b;
+}
+.skillIcons i:hover {
+  background-color: #212225;
+  border: 1px solid #e9e9e9;
+}
+@media screen and (max-width: 600px) {
+  .skillIcons i {
+    font-size: 3rem;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+  }
+}
+/* -------------------- */
+.projectSection {
+  background-color: #1d1d27;
+  color: #e9e9e9;
+}
+.projectCard img {
+  height: 180px;
+  width: 350px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid;
+}
+.flexProject {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 50px;
+}
+.projectCard span {
+  font-size: 1.1rem;
+  text-align: center;
+}
+.projectCard h3 {
+  font-size: 1.5rem;
+  padding: 10px;
+}
+@media (max-width: 960px) {
+  .projectCard {
+    min-width: 300px;
+    overflow: hidden;
+    flex: 40%;
+  }
+}
+
+/* -------------------------------- */
+/* --------footer css--------- */
+
+footer {
+  background-color: #090910;
+  color: #090910;
+}
+.flexFooter span {
+  height: 40px;
+  width: 300px;
+  background-color: #55e0e5;
+  color: #090910;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  gap: 10px;
+  font-size: 1.2rem;
+}
+
+.flexFooter i {
+  color: #090910;
+}
+.flexFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px 100px;
+  padding: 30px 50px;
+  flex-wrap: wrap;
+}
+.flexFooter span:hover {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  transition: 0.3s;
+}
+
+.flexFooter span:hover i {
+  color: #fff;
+  transition: 0.3s;
+}
+.copyright {
+  text-align: center;
+  padding: 10px;
+  font-size: 1.2rem;
+  background-color: #072830;
+}
+@media screen and (max-width: 1200px) {
+  .flexFooter span {
+    flex: 100%;
+    max-width: 70%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .flexFooter span {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
